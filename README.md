@@ -17,11 +17,11 @@ __ambient-data-tds__ will indiscriminately accept UDP __raddec__ packets on 0.0.
 Supported Listener Interfaces
 -----------------------------
 
-__ambient-data-tds__ can interface with wireless infrastructure via any of the __barnowl-x__ modules, which can be installed as required, as indicated below.
+__ambient-data-tds__ can interface with wireless infrastructure via any of the __barnowl-x__ modules, which can be installed on-demand, as indicated below.
 
 ### barnowl-aruba
 
-To receive data from Aruba APs, install the [barnowl-aruba]() module with the command `npm install barnowl-aruba`, and then from the root folder run at any time:
+To receive data from Aruba APs, install the [barnowl-aruba](https://github.com/reelyactive/barnowl-aruba) module with the command `npm install barnowl-aruba`, and then from the root folder run at any time:
 
     npm run aruba
 
