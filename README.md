@@ -14,6 +14,20 @@ Clone this repository, install package dependencies with `npm install`, edit the
 __ambient-data-tds__ will indiscriminately accept UDP __raddec__ packets on 0.0.0.0:50001 and attempt to write relevant data to the SQL Server database.
 
 
+Supported Listener Interfaces
+-----------------------------
+
+__ambient-data-tds__ can interface with wireless infrastructure via any of the __barnowl-x__ modules, which can be installed as required, as indicated below.
+
+### barnowl-aruba
+
+To receive data from Aruba APs, install the [barnowl-aruba]() module with the command `npm install barnowl-aruba`, and then from the root folder run at any time:
+
+    npm run aruba
+
+For debugging, instead run the script `npm run aruba-verbose`.
+
+
 Contributing
 ------------
 

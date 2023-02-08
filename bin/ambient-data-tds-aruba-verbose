@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const AmbientDataTDS = require('../lib/ambientdatatds.js');
+
+// ----- Exit gracefully if the optional dependency is not found -----
+let BarnowlAruba;
+try {
+  BarnowlAruba = require('barnowl-aruba');
+}
+catch(err) {
+  console.log('This script requires the barnowl-aruba package.  Try installing with:');
+  console.log('\r\n    "npm install barnowl-aruba"\r\n');
+  return console.log('and then run this script again.');
+}
+// -------------------------------------------------------------------
+
+const OPTIONS = { isDebug: true };
+
+
+let service = new AmbientDataTDS(OPTIONS);
+let barnowl = new BarnowlAruba();
+
+barnowl.addListener(BarnowlAruba.WsListener, {});
+barnowl.on('raddec', (raddec) => { service.handleEvent('raddec', raddec); });
