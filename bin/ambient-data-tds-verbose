@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const AmbientDataTDS = require('../lib/ambientdatatds.js');
+
+const OPTIONS = { isDebug: true };
+
+let service = new AmbientDataTDS(OPTIONS);

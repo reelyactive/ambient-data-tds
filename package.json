@@ -1,0 +1,47 @@
+{
+  "name": "ambient-data-tds",
+  "homepage": "https://github.com/reelyactive/ambient-data-tds",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
+  "description": "Collect and process wireless ambient data packets, writing specific properties to SQL Server using TDS.  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "ambient data",
+    "TDS",
+    "SQL Server",
+    "IoT"
+  ],
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "bin": "./bin/ambient-data-tds",
+  "main": "./lib/ambientdatatds.js",
+  "scripts": {
+    "start": "node bin/ambient-data-tds",
+    "verbose": "node bin/ambient-data-tds-verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/ambient-data-tds.git"
+  },
+  "dependencies": {
+    "advlib": "^1.1.5",
+    "advlib-ble": "^1.3.1",
+    "advlib-ble-manufacturers": "^1.4.1",
+    "advlib-ble-services": "^1.3.4",
+    "barnowl": "^1.2.3",
+    "tedious": "^15.1.2"
+  },
+  "bugs": {
+    "url": "https://github.com/reelyactive/ambient-data-tds/issues"
+  },
+  "contributors": [
+    {
+      "name": "Jeffrey Dungen"
+    }
+  ],
+  "license": "MIT"
+}
