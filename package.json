@@ -21,7 +21,9 @@
   "main": "./lib/ambientdatatds.js",
   "scripts": {
     "start": "node bin/ambient-data-tds",
-    "verbose": "node bin/ambient-data-tds-verbose"
+    "verbose": "node bin/ambient-data-tds-verbose",
+    "aruba": "node bin/ambient-data-tds-aruba",
+    "aruba-verbose": "node bin/ambient-data-tds-aruba-verbose"
   },
   "repository": {
     "type": "git",
