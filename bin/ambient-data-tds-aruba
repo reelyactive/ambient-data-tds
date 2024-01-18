@@ -19,7 +19,4 @@ const OPTIONS = {};
 
 let service = new AmbientDataTDS(OPTIONS);
 
-let barnowl = new BarnowlAruba();
-
-barnowl.addListener(BarnowlAruba.WsListener, {});
-barnowl.on('raddec', (raddec) => { service.handleEvent('raddec', raddec); });
+service.barnowl.addListener(BarnowlAruba, {}, BarnowlAruba.WsListener, {});
